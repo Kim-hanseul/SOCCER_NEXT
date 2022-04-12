@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { CloseOutlined } from '@ant-design/icons'
 
 Profile.getInitialProps = async ({ query }) => {
   const {id} = query
@@ -21,18 +20,18 @@ export default function Profile({id}){
       })
     },[])
 
-    return (<><h1>사용자 프로필</h1>
+    return (<><h1>User profile</h1>
     <div>
-    <label><b>사용자 ID</b></label>
+    <label><b>User Id</b></label>
     <input type="text" name='username' value= {router.query.id} /><br />
 
-    <label htmlFor=""><b>비밀번호</b></label>
+    <label htmlFor=""><b>Password</b></label>
     <input type="text" name='password'value={user.password}/><br />
 
-    <label><b>이름</b></label>
+    <label><b>Name</b></label>
     <input type="text" name='name' value={user.name}/><br />
 
-    <label><b>전화번호</b></label>
+    <label><b>Tel Num</b></label>
     <input type="text" name='telephone' value={user.telephone}/><br />
 
    <br />
