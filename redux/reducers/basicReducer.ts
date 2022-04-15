@@ -5,7 +5,9 @@ const initialState = {}
 export const basicSlice = createSlice({
     name: 'basics',
     initialState,
-    reducers: {}
+    reducers: {
+        
+    }
 })
 
-export default basicSlice.reducer
+export default basicSlice.reducer 

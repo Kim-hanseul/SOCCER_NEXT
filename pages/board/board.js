@@ -1,7 +1,7 @@
 import axios from "axios";
 import style from "board/style/board.module.css"
 import React,{useState} from 'react'
-import { addBoard } from "../../redux/reducers/board.reducer";
+import { addBoard } from "../../redux/reducers/board.ts";
 import { useDispatch } from "react-redux";
 
 export default function AppBoard(){

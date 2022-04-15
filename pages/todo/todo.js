@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 import { useDispatch } from 'react-redux'
-import { addTask } from '../../redux/reducers/todo.reducer'
+import { addTask } from '../../redux/reducers/todoReducer.ts'
 import { getBindingIdentifiers } from "@babel/types";
 import Image from "next/image";
 import { Task } from "redux-saga";
