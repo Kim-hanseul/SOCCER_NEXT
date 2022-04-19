@@ -4,10 +4,9 @@
     },
     "include": [
         "pages/**/*.js",
-        "redux/**/*.js", "redux/reducers/api/userApi.ts"],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
-    ]
-    
+        "redux/**/*.ts"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
 }

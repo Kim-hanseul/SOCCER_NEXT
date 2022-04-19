@@ -19,7 +19,7 @@ interface UserJoinSuccessType{
 
 function* join(user: UserJoinType){
     try{
-        alert(' 진행 3: saga내부 join 성공  '+ JSON.stringify(user))
+        alert(' 진행 3: saga 내부 join 성공  '+ JSON.stringify(user))
         const response : UserJoinSuccessType = yield postUser(user.payload)
         yield put(userActions.joinSuccess(response))
     }catch(error){
