@@ -20,18 +20,18 @@ export default function Profile({id}){
       })
     },[])
 
-    return (<><h1>User profile</h1>
+    return (<><h1>사용자 프로필</h1>
     <div>
-    <label><b>User Id</b></label>
+    <label><b>사용자 ID</b></label>
     <input type="text" name='username' value= {router.query.id} /><br />
 
-    <label htmlFor=""><b>Password</b></label>
+    <label htmlFor=""><b>비밀번호</b></label>
     <input type="text" name='password'value={user.password}/><br />
 
-    <label><b>Name</b></label>
+    <label><b>이름</b></label>
     <input type="text" name='name' value={user.name}/><br />
 
-    <label><b>Tel Num</b></label>
+    <label><b>전화번호</b></label>
     <input type="text" name='telephone' value={user.telephone}/><br />
 
    <br />

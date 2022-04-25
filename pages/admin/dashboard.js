@@ -1,3 +1,3 @@
 export default function DashBoard(){
-    return (<><h1>DashBoard</h1></>)
+    return (<><h1>대시보드</h1></>)
 }
